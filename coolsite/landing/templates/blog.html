@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block container %}
+    <!-- END templateux-navbar -->
+    <section class="templateux-hero overlay"  data-scrollax-parent="true">
+      <!-- <div class="cover" data-scrollax="properties: { translateY: '30%' }"><img src="images/hero_2.jpg" /></div> -->
+      <div class="cover" data-scrollax="properties: { translateY: '30%' }"><img src="{% static 'images/dj2_new.jpg' %}"></div>
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center intro">
+          <div class="col-md-10" data-aos="fade-up">
+            <h1>Секреты</h1>
+            <p class="lead">Залог отличного праздника, классная музыка и свет</p>
+            <a href="#next" class="go-down js-smoothscroll"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END templateux-hero -->
+    
+    
+    <section class="templateux-portfolio-overlap mb-5" id="next">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-up">
+            <a class="post animsition-link" href="{% url 'blog_single' %}">
+              <figure>
+                <img src="{% static 'images/djneo38.jpg' %}" alt="Free Template" class="img-fluid">
+              </figure>
+              <div class="project-hover">
+                <div class="project-hover-inner">
+                  <h2>Ух... Танцы</h2>
+                  <span>Разве можно сделать праздник без музыки?</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <a class="post animsition-link" href="{% url 'blog_single' %}">
+              <figure>
+                <img src="{% static 'images/djneo23.jpg' %}" alt="Free Template" class="img-fluid">
+              </figure>
+              <div class="project-hover">
+                <div class="project-hover-inner">
+                  <h2>Классное оборудование</h2>
+                  <span>Без него создать нужную атмосферу не получится</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- END row -->
+
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-up">
+            <a class="post animsition-link" href="{% url 'blog_single' %}">
+              <figure>
+                <img src="{% static 'images/djneo28.jpg' %}" alt="Free Template" class="img-fluid">
+              </figure>
+              <div class="project-hover">
+                <div class="project-hover-inner">
+                  <h2>Любите УДАРНЫЕ?</h2>
+                  <span>Мы тоже</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <a class="post animsition-link" href="{% url 'blog_single' %}">
+              <figure>
+                <img src="{% static 'images/djneo39.jpg' %}" alt="Free Template" class="img-fluid">
+              </figure>
+              <div class="project-hover">
+                <div class="project-hover-inner">
+                  <h2>Световое сопровождение</h2>
+                  <span>Поверьте, это очень важно</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- END row -->
+
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-up">
+            <a class="post animsition-link" href="{% url 'blog_single' %}">
+              <figure>
+                <img src="{% static 'images/djneo36.jpg' %}" alt="Free Template" class="img-fluid">
+              </figure>
+              <div class="project-hover">
+                <div class="project-hover-inner">
+                  <h2>Только лучшая музыка</h2>
+                  <span>Опыт более 20 лет</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <a class="post animsition-link" href="{% url 'blog_single' %}">
+              <figure>
+                <img src="{% static 'images/djneo15.jpg' %}" alt="Free Template" class="img-fluid">
+              </figure>
+              <div class="project-hover">
+                <div class="project-hover-inner">
+                  <h2>Ведущий?</h2>
+                  <span>Подберём лучшего :-)</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- END row -->
+
+        <div class="row pt-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12 text-center">
+            <a href="{% url 'contact' %}" class="button button--red  mb-5">Перейти к заказу</a>
+          </div>
+        </div>
+
+        <a class="templateux-section templateux-cta animsition-link" href="https://t.me/+79167001720"
+           data-aos="fade-up">
+          <div class="container-fluid">
+            <div class="cta-inner">
+              <h2><span class="words-1">Написать в Telegram </span> <span class="words-2">Назови пароль DJNEO и получи подарок!</span>
+              </h2>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+ {% endblock %}

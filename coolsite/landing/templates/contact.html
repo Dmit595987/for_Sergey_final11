@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block container %}
+    <!-- END templateux-navbar -->
+    <section class="templateux-hero overlay"  data-scrollax-parent="true">
+      <!-- <div class="cover" data-scrollax="properties: { translateY: '30%' }"><img src="images/hero_2.jpg" /></div> -->
+      <div class="cover" data-scrollax="properties: { translateY: '30%' }"><img src="{% static 'images/dj2_new.jpg' %}"></div>
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center intro">
+          <div class="col-md-10" data-aos="fade-up">
+            <h1>На заказ через сайт скидка 30%</h1>
+            <p class="lead">Заполните поля ниже </p>
+            <a href="#next" class="go-down js-smoothscroll"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END templateux-hero -->
+    
+    
+    <section class="templateux-portfolio-overlap mb-5" data-aos="fade-up" id="next">
+      <div class="container">
+        <!-- <div class="row"> -->
+          <form action="{% url 'contact' %}" method="post">
+            <div class="row">
+              {% csrf_token %}
+
+                <div class="form-error">{{ form.non_field_errors }}</div>
+
+                {% for f in form %}
+                <div class="col-md-4  mb-4">
+                <p><label class="form-label" for="{{ f.id_for_label }}"></label>{{ f }}</p>
+                <div class="form-error">{{ f.errors }}</div>
+                </div>
+                {% endfor %}
+
+
+<!--              <div class="col-md-4  mb-4">-->
+<!--&lt;!&ndash;                <input type="text" class="form-control" placeholder="Имя">&ndash;&gt;-->
+<!--                {{ form.name }}-->
+<!--              </div>-->
+<!--              <div class="col-md-4  mb-4">-->
+<!--&lt;!&ndash;                <input type="email" class="form-control" placeholder="Email">&ndash;&gt;-->
+<!--                {{ form.email_client }}-->
+<!--              </div>-->
+<!--              <div class="col-md-4  mb-4">-->
+<!--&lt;!&ndash;                <input type="text" class="form-control" placeholder="Номер телефона">&ndash;&gt;-->
+<!--                {{ form.phone }}-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--              <div class="col-md-4  mb-4">-->
+<!--&lt;!&ndash;                <input type="text" class="form-control" placeholder="Дата мероприятия">&ndash;&gt;-->
+<!--                {{ form.date_meeting }}-->
+<!--              </div>-->
+<!--              <div class="col-md-4  mb-4">-->
+<!--&lt;!&ndash;                <input type="email" class="form-control" placeholder="Тема мероприятия">&ndash;&gt;-->
+<!--                {{ form.place_meeting }}-->
+<!--              </div>-->
+<!--              <div class="col-md-4  mb-4">-->
+<!--&lt;!&ndash;                <input type="text" class="form-control" placeholder="Место мероприятия">&ndash;&gt;-->
+<!--                {{ form.topic_meeting }}-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--              <div class="col-md-12  mb-4">-->
+<!--&lt;!&ndash;                <textarea name="" class="form-control" id="" cols="30" rows="10" placeholder="Комментарии"></textarea>&ndash;&gt;-->
+<!--              </div>-->
+               </div>
+            <div class="row">
+              <div class="col-md-4  mb-4">
+                <input type="submit" class="button button--red" value="ОТПРАВИТЬ">
+              </div>
+            </div>
+          </form>
+        <!-- </div> -->
+      </div>
+    </section>
+
+        <a class="templateux-section templateux-cta animsition-link" href="https://t.me/+79167001720" data-aos="fade-up">
+      <div class="container-fluid">
+        <div class="cta-inner">
+          <h2><span class="words-1">Написать в Telegram </span> <span class="words-2">Назови пароль DJNEO и получи подарок!</span></h2>
+        </div>
+      </div>
+    </a>
+        <br>
+        <p class="text-center"><a href="{% url 'about' %}#reviews" class="button button--red">Отзывы</a></p>
+
+
+{% endblock %}

@@ -1,0 +1,259 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block container %}
+    <!-- END templateux-navbar -->
+    <section class="templateux-hero overlay"  data-scrollax-parent="true">
+
+      <div class="cover" data-scrollax="properties: { translateY: '30%' }"><img src="{% static 'images/dj2_new.jpg' %}" ></div>
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center intro">
+          <div class="col-md-10" data-aos="fade-up">
+            <h1>Отличное настроение в подарок</h1>
+            <p class="lead">Музыка и свет на любой вкус.</p>
+            <a href="#next" class="go-down js-smoothscroll"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END templateux-hero -->
+
+    <section class="templateux-portfolio-overlap" id="next">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-up">
+            <a class="project animsition-link" href="{% url 'blog' %}">
+              <figure>
+                <img src="{% static 'images/djneo44.jpg' %}" alt="Free Template" class="img-fluid">
+              </figure>
+              <div class="project-hover">
+                <div class="project-hover-inner">
+                  <h2>Жаркие танцы</h2>
+                  <span>Ваши гости не будут скучать</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <a class="project animsition-link" href="{% url 'blog' %}">
+              <figure>
+                <img src="{% static 'images/djneo33.jpg' %}" alt="Free Template" class="img-fluid">
+              </figure>
+              <div class="project-hover">
+                <div class="project-hover-inner">
+                  <h2>Только позитивные эмоции</h2>
+                  <span>Я умею делать праздник!</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- END row -->
+    
+        <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <a class="project animsition-link" href="{% url 'blog' %}">
+              <figure>
+                <img src="{% static 'images/djneo24.jpg' %}" alt="Free Template" class="img-fluid">
+              </figure>
+              <div class="project-hover">
+                <div class="project-hover-inner">
+                  <h2>Супер конкурсы</h2>
+                  <span>Мы умеем создать настроение</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <a class="project animsition-link" href="{% url 'blog' %}">
+              <figure>
+                <img src="{% static 'images/djneo32.jpg' %}" alt="Free Template" class="img-fluid">
+              </figure>
+              <div class="project-hover">
+                <div class="project-hover-inner">
+                  <h2>Звук, свет, спецэффекты</h2>
+                  <span>Всё самое лучшее для Вас</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <a class="project animsition-link" href="{% url 'blog' %}">
+              <figure>
+                <img src="{% static 'images/djneo46.jpg' %}" alt="Free Template" class="img-fluid">
+              </figure>
+              <div class="project-hover">
+                <div class="project-hover-inner">
+                  <h2>Своё собственное оборудование</h2>
+                  <span>Опыт более 20 лет,  я в этом профи</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+        <!-- END row -->
+      </div>
+    </section>
+
+   
+    <!-- END section -->
+    <section class="templateux-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4" data-aos="fade-up">
+            <h2 class="section-heading mt-3">Вы получите</h2>
+          </div>
+          <div class="col-md-8" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="mb-5">От победителя конкурса "Диджей Планеты":</h2>
+              </div>
+            </div>
+            
+
+            <div class="row  pt-sm-0 pt-md-5 mb-5">
+
+              <div class="col-lg-6">
+                <div class="media templateux-media mb-4">
+                  <div class="mr-4 icon">
+                    <span class="icon-monitor display-3"></span>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="h5">Программа мероприятия</h3>
+                    <p>У вас будет свежая программа разработанная специально для Вас</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="media templateux-media mb-4">
+                  <div class="mr-4 icon">
+                    <span class="icon-command display-3"></span>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="h5">Отбивки и звуковые эффекты</h3>
+                    <p>Бесплатно авторские фанфары и отбивки, а также неподражаемые подложки для конкурсов</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- END row -->
+            <div class="row clearfix">
+              <div class="col-lg-6">
+                <div class="media templateux-media mb-4">
+                  <div class="mr-4 icon">
+                    <span class="icon-feather display-3"></span>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="h5">Мы воплотим ваши самые смелые фантазии</h3>
+                    <p>Опыт более 20 лет. Я знаю как сделать действительно классный Праздник.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                
+                <div class="media templateux-media mb-4">
+                  <div class="mr-4 icon">
+                    <span class="icon-shopping-cart display-3"></span>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="h5">Цены по карману</h3>
+                    <p>У меня есть система скидок и бонусов.</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <!-- END row -->
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+            <p class="text-center"><a href="{% url 'about' %}#reviews" class="button button--red">Отзывы</a></p>
+    <!-- END section -->
+    <section class="templateux-section mb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4" data-aos="fade-up">
+            <h2 class="section-heading mt-3">Секреты мастерства</h2>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-lg-12">
+                <a class="post animsition-link" href="{% url 'blog_single' %}" data-aos="fade-up" data-aos-delay="100">
+                  <figure>
+                    <img src="{% static 'images/djneo41.jpg' %}" alt="Free Template" class="img-fluid">
+
+                  </figure>
+                  <div class="post-hover">
+                    <div class="post-hover-inner">
+                      <h2>А ТЫ?</h2>
+                      <span>Уже заказал праздник</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <a class="post animsition-link" href="{% url 'blog_single' %}" data-aos="fade-up" data-aos-delay="200">
+                  <figure>
+                    <img src="{% static 'images/djneo8.jpg' %}" alt="Free Template" class="img-fluid">
+                  </figure>
+                  <div class="post-hover">
+                    <div class="post-hover-inner">
+                      <h2>Корпоратив нада?</h2>
+                      <span>А может под старину?</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <a class="post animsition-link" href="{% url 'blog_single' %}" data-aos="fade-up" data-aos-delay="300">
+                  <figure>
+                    <img src="{% static 'images/djneo26.jpg' %}" alt="Free Template" class="img-fluid">
+                  </figure>
+                  <div class="post-hover">
+                    <div class="post-hover-inner">
+                      <h2>ДИСКО?</h2>
+                      <span>Можно и ДИСКО</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-md-8 ml-auto">
+            <a href="{% url 'blog' %}" class="animsition-link">Секреты мастерства </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <div class="row pt-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12 text-center">
+            <a href="https://api.whatsapp.com/send/?phone=79167001720" class="button button--red  mb-5">Написать в whatsapp</a>
+          </div>
+        </div>
+
+    <a class="templateux-section templateux-cta animsition-link mt-5" href="{% url 'contact' %}" data-aos="fade-up">
+      <div class="container-fluid">
+        <div class="cta-inner">
+          <h2><span class="words-1">Доверь свой праздник профи</span> <span class="words-2">Я всегда на связи</span></h2>
+        </div>
+      </div>
+    </a>
+    <!-- END call to action -->
+
+{% endblock %}

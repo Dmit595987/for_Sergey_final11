@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block container %}
+
+    <!-- END templateux-navbar -->
+    <section class="templateux-hero overlay"  data-scrollax-parent="true">
+      <!-- <div class="cover" data-scrollax="properties: { translateY: '30%' }"><img src="images/hero_2.jpg" /></div> -->
+      <div class="cover" data-scrollax="properties: { translateY: '30%' }"><img src="{% static 'images/dj2_new.jpg' %}"></div>
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center intro">
+          <div class="col-md-10" data-aos="fade-up">
+            <h1>Свадьба один раз</h1>
+            <p class="lead">Воспоминания на всю жизнь...</p>
+            
+            <a href="#next" class="go-down js-smoothscroll"></a>
+            
+
+            
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END templateux-hero -->
+    
+    
+    <section class="templateux-portfolio-overlap mb-5" id="next">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="row work-detail">
+              <div class="col-md-4 ">
+                <span class=caption>Лучшее Настроение</span>
+                <strong>...</strong>
+              </div>
+              <div class="col-md-4">
+                <span class=caption>Супер Свет</span>
+                <strong>...</strong>
+              </div>
+              <div class="col-md-4">
+                <span class=caption>Атмосферная музыка</span>
+                <strong>....</strong>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6">
+            <p class="mb-5">Любой праздник это прежде всего ПЛАН Мероприятия. Любой профи вам это подтвердит.</p>
+              </div>
+              <div class="col-md-6">
+                <p>Именно по этому я всегда очень ответсвенно отношусь к разработке Плана</p>
+              </div>
+            </div>
+
+
+            <p class="text-center mb-5"><img src="{% static 'images/djneo22.jpg' %}" alt="Image placeholder" class="img-fluid"></p>
+
+            <div class="row mb-5">
+              <div class="col-md-6">
+                <p>Мы вместе с вами обязательно обсудим все ваши пожелания. И вкусовые предпочтения. И какие гости у Вас будут. Важна каждая мелочь и каждая деталь.</p>
+              </div>
+              <div class="col-md-6">
+                <p>Конечно у меня есть масса наработок и уже отработанных годами решений. Есть уже готовы шаблоны конкурсов и музыки. Важно чтобы каждый гость на празднике получил массу позитивных эмоций. И такая задача под силу только высококласному профессионалу. </p>
+                <p>Я люблю свою работу и огромное количество позитивных отзывов доказывают, что я действительно профессионал высокого класса.</p>
+              </div>
+            </div>
+            
+
+            <p class="text-center mb-5"><img src="{% static 'images/djneo27.jpg' %}" alt="Image placeholder" class="img-fluid"></p>
+
+            <p class="text-center"><a href="{% url 'contact' %}" class="button button--red">Получи скидку!</a></p>
+          </div>
+
+
+          
+        </div>
+
+      </div>
+    </section>
+
+    <section class="testimony">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <blockquote class="mb-5">
+              <p>&ldquo;Уже больше месяца прошло после нашей свадьбы, а мы до сих пор вспоминаем и радуемся тому, как все отлично прошло. Выбор Сергея в качестве диджея был сделан сразу же, после посещения его сайта и прочтения отзывов! и мы не разу не пожалели!! все было четко и профессионально. Исполнил все наши пожелания (а свадьба была русско-французская), и даже пожелания французской бабушки в разгар свадьбы - одним словом МОЛОДЕЦ! еще заказывали апож - было очень весело!! Спасибо огромное тебе, Сергей, и удачи!!!&rdquo;</p>
+            </blockquote>
+            <p class="author">&mdash; <span>Мария и Клод</span>, <span>молодожёны</span></p>
+          </div>
+          </div>
+        <br>
+        <p class="text-center"><a href="{% url 'about' %}#reviews" class="button button--red">Больше отзывов</a></p>
+      </div>
+    </section>
+{% endblock %}
